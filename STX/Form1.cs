@@ -15,6 +15,7 @@ namespace STX
         public Form1()
         {
             InitializeComponent();
+            Alerts.Ask("cocozinho");
         }
     }
 }

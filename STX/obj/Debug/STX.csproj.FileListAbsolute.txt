@@ -1,0 +1,9 @@
+C:\Users\bruno\OneDrive\Documentos\Projetos\STX\STX\STX\bin\Debug\STX.exe.config
+C:\Users\bruno\OneDrive\Documentos\Projetos\STX\STX\STX\bin\Debug\STX.exe
+C:\Users\bruno\OneDrive\Documentos\Projetos\STX\STX\STX\bin\Debug\STX.pdb
+C:\Users\bruno\OneDrive\Documentos\Projetos\STX\STX\STX\obj\Debug\STX.csprojAssemblyReference.cache
+C:\Users\bruno\OneDrive\Documentos\Projetos\STX\STX\STX\obj\Debug\STX.Properties.Resources.resources
+C:\Users\bruno\OneDrive\Documentos\Projetos\STX\STX\STX\obj\Debug\STX.csproj.GenerateResource.cache
+C:\Users\bruno\OneDrive\Documentos\Projetos\STX\STX\STX\obj\Debug\STX.csproj.CoreCompileInputs.cache
+C:\Users\bruno\OneDrive\Documentos\Projetos\STX\STX\STX\obj\Debug\STX.exe
+C:\Users\bruno\OneDrive\Documentos\Projetos\STX\STX\STX\obj\Debug\STX.pdb

@@ -8,9 +8,7 @@ namespace STX
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+        public const string APP_NAME = "Sistema STX";
         [STAThread]
         static void Main()
         {
