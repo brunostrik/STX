@@ -25,5 +25,12 @@ namespace STX
                 Application.Exit();
             }
         }
+
+        private void filiaisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.listFilial = new ListFilial();
+            Program.listFilial.MdiParent = Program.formMain;
+            Program.listFilial.Show();
+        }
     }
 }

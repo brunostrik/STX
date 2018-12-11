@@ -32,6 +32,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>STX.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -93,8 +99,16 @@
     <Compile Include="FormTrocaSenha.Designer.cs">
       <DependentUpon>FormTrocaSenha.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListFilial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListFilial.Designer.cs">
+      <DependentUpon>ListFilial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Filial.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="Model\Logs.cs" />
+    <Compile Include="Model\Vendedor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormLoad.resx">
@@ -103,8 +117,14 @@
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTrocaSenha.resx">
       <DependentUpon>FormTrocaSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListFilial.resx">
+      <DependentUpon>ListFilial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -136,6 +156,8 @@
   <ItemGroup>
     <None Include="Resources\Screenshot_2.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

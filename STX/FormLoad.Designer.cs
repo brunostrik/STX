@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLoad));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -55,6 +56,7 @@
             this.label1.Size = new System.Drawing.Size(198, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Conectando ao servidor...";
+            this.label1.UseWaitCursor = true;
             // 
             // progressBar1
             // 
@@ -64,6 +66,7 @@
             this.progressBar1.Size = new System.Drawing.Size(266, 23);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.progressBar1.TabIndex = 3;
+            this.progressBar1.UseWaitCursor = true;
             // 
             // backgroundWorker
             // 
@@ -79,6 +82,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormLoad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLoad";

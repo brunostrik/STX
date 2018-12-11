@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace STX
 {
-    class Logs
+    public class Logs
     {
         public static void Log(String texto)
         {

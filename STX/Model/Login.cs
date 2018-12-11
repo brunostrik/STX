@@ -13,6 +13,7 @@ namespace STX
         public string usuario = "";
         public string senha = "";
         public bool trocar = false;
+        public bool ativo = false;
 
         public Login()
         {
@@ -35,7 +36,7 @@ namespace STX
         } 
         public Login(string usuario, string senha)
         {
-            string CmdString = "SELECT * FROM login WHERE usuario = @USU AND senha = @SEN";
+            string CmdString = "SELECT * FROM login WHERE usuario = @USU AND senha = @SEN AND ativo = 1";
             MySqlCommand cmd = new MySqlCommand(CmdString, DBConfig.getConnection());
             cmd.Parameters.Add("@USU", MySqlDbType.VarChar);
             cmd.Parameters["@USU"].Value = usuario;
@@ -53,7 +54,7 @@ namespace STX
         }
         public void Update()
         {
-            string CmdString = "UPDATE login SET usuario = @USU, senha = @SEN, trocar = @TRO WHERE id = @ID";
+            string CmdString = "UPDATE login SET usuario = @USU, senha = @SEN, trocar = @TRO, ativo = @ATI WHERE id = @ID";
             MySqlCommand cmd = new MySqlCommand(CmdString, DBConfig.getConnection());
             cmd.Parameters.Add("@USU", MySqlDbType.VarChar);
             cmd.Parameters["@USU"].Value = usuario;
@@ -61,6 +62,8 @@ namespace STX
             cmd.Parameters["@SEN"].Value = senha;
             cmd.Parameters.Add("@TRO", MySqlDbType.Bit);
             cmd.Parameters["@TRO"].Value = (trocar ? 1 : 0);
+            cmd.Parameters.Add("@ATI", MySqlDbType.Int32);
+            cmd.Parameters["@ATI"].Value = (ativo ? 1 : 0); ;
             cmd.Parameters.Add("@ID", MySqlDbType.Int32);
             cmd.Parameters["@ID"].Value = id;
             cmd.ExecuteNonQuery();

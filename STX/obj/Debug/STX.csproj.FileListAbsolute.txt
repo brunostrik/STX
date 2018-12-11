@@ -24,3 +24,5 @@ C:\Users\User\source\repos\brunostrik\STX\STX\obj\Debug\STX.pdb
 C:\Users\User\source\repos\brunostrik\STX\STX\obj\Debug\STX.FormLoad.resources
 C:\Users\User\source\repos\brunostrik\STX\STX\obj\Debug\STX.csprojResolveAssemblyReference.cache
 C:\Users\User\source\repos\brunostrik\STX\STX\obj\Debug\STX.FormTrocaSenha.resources
+C:\Users\User\Source\Repos\brunostrik\STX\STX\obj\Debug\STX.FormMain.resources
+C:\Users\User\Source\Repos\brunostrik\STX\STX\obj\Debug\STX.ListFilial.resources

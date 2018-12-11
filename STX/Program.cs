@@ -20,6 +20,8 @@ namespace STX
         public static FormMain formMain;
         public static FormTrocaSenha formTrocaSenha;
 
+        public static ListFilial listFilial;
+
         [STAThread]
         static void Main()
         {
