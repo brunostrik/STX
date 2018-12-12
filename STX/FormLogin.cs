@@ -70,5 +70,15 @@ namespace STX
         {
             Application.Exit();
         }
+
+        private void FormLogin_Activated(object sender, EventArgs e)
+        {
+            if (Program.DEBUG_MODE)
+            {
+                txtUsuario.Text = "teste";
+                txtSenha.Text = "123";
+                btnEntrar_Click(null, null);
+            }
+        }
     }
 }
