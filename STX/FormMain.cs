@@ -24,6 +24,7 @@ namespace STX
             {
                 Application.Exit();
             }
+            ConfigurarPermissoes();
         }
 
         private void filiaisToolStripMenuItem_Click(object sender, EventArgs e)
@@ -31,6 +32,10 @@ namespace STX
             Program.listFilial = new ListFilial();
             Program.listFilial.MdiParent = Program.formMain;
             Program.listFilial.Show();
+        }
+        private void ConfigurarPermissoes()
+        {
+
         }
     }
 }

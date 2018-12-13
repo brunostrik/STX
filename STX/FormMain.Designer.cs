@@ -87,20 +87,20 @@
             // vendedoresToolStripMenuItem
             // 
             this.vendedoresToolStripMenuItem.Name = "vendedoresToolStripMenuItem";
-            this.vendedoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vendedoresToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.vendedoresToolStripMenuItem.Text = "Vendedores";
             // 
             // filiaisToolStripMenuItem
             // 
             this.filiaisToolStripMenuItem.Name = "filiaisToolStripMenuItem";
-            this.filiaisToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.filiaisToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.filiaisToolStripMenuItem.Text = "Filiais";
             this.filiaisToolStripMenuItem.Click += new System.EventHandler(this.filiaisToolStripMenuItem_Click);
             // 
             // usuáriosToolStripMenuItem
             // 
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.usuáriosToolStripMenuItem.Text = "Usuários";
             // 
             // relatóriosToolStripMenuItem

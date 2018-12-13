@@ -19,6 +19,7 @@ namespace STX
         public static FormLogin formLogin;
         public static FormMain formMain;
         public static FormTrocaSenha formTrocaSenha;
+        public static FormFilial formFilial;
 
         public static ListFilial listFilial;
 

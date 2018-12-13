@@ -75,6 +75,12 @@
     <Compile Include="Alerts.cs" />
     <Compile Include="DBConfig.cs" />
     <Compile Include="Encrypt.cs" />
+    <Compile Include="FormFilial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFilial.Designer.cs">
+      <DependentUpon>FormFilial.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLoad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,8 @@
     <Compile Include="FormTrocaSenha.Designer.cs">
       <DependentUpon>FormTrocaSenha.cs</DependentUpon>
     </Compile>
+    <Compile Include="IListForm.cs" />
+    <Compile Include="ISelector.cs" />
     <Compile Include="ListFilial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,11 +114,15 @@
       <DependentUpon>ListFilial.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Filial.cs" />
+    <Compile Include="Model\IModel.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="Model\Logs.cs" />
     <Compile Include="Model\Vendedor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormFilial.resx">
+      <DependentUpon>FormFilial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLoad.resx">
       <DependentUpon>FormLoad.cs</DependentUpon>
     </EmbeddedResource>
