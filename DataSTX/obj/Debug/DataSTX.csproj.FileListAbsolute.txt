@@ -1,0 +1,16 @@
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\bin\Debug\DataSTX.dll.config
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\bin\Debug\DataSTX.dll
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\bin\Debug\DataSTX.pdb
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\bin\Debug\Google.Protobuf.dll
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\bin\Debug\MySql.Data.dll
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\bin\Debug\Google.Protobuf.xml
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\bin\Debug\MySql.Data.xml
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\obj\Debug\DataSTX.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\obj\Debug\DataSTX.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\obj\Debug\DataSTX.csproj.CopyComplete
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\obj\Debug\DataSTX.dll
+C:\Users\User\Source\Repos\brunostrik\STX\DataSTX\obj\Debug\DataSTX.pdb

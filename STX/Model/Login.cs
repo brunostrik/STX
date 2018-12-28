@@ -1,72 +1,85 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System;
+
 
 namespace STX
 {
-    public class Login
+    [Serializable]
+    [Table("login", "usuário", "usuários")]
+    public class Login : IModel<Login>
     {
-        public int id = 0;
-        public string usuario = "";
-        public string senha = "";
-        public bool trocar = false;
-        public bool ativo = false;
+        [Browsable(false)]
+        public int id { get; set; } = 0;
+        [DisplayName("Login")]
+        [Required(ErrorMessage = "Preencha o login")]
+        public string usuario { get; set; } = "";
+        [DisplayName("Senha")]
+        [PasswordPropertyText]
+        [Required(ErrorMessage = "Preencha a senha")]
+        [DataType(DataType.Password)]
+        public string senha { get; set; } = "";
+        [Browsable(false)]
+        public int trocar = 0;
+        [Browsable(false)]
+        [DataType(DataType.Custom)]
+        public int ativo { get; set; } = 0;
 
         public Login()
         {
+
         }
-        public Login(int id)
+
+        public int Id()
         {
-            string CmdString = "SELECT * FROM login WHERE id = @ID";
-            MySqlCommand cmd = new MySqlCommand(CmdString, DBConfig.getConnection());
-            cmd.Parameters.Add("@ID", MySqlDbType.Int16);
-            cmd.Parameters["@ID"].Value = id;
-            MySqlDataReader rs = cmd.ExecuteReader();
-            if (rs.Read())
-            {
-                this.id = rs.GetInt32("id");
-                this.usuario = rs.GetString("usuario");
-                this.senha = rs.GetString("senha");
-                this.trocar = rs.GetBoolean("trocar");
-            }
-            rs.Close();
-        } 
-        public Login(string usuario, string senha)
-        {
-            string CmdString = "SELECT * FROM login WHERE usuario = @USU AND senha = @SEN AND ativo = 1";
-            MySqlCommand cmd = new MySqlCommand(CmdString, DBConfig.getConnection());
-            cmd.Parameters.Add("@USU", MySqlDbType.VarChar);
-            cmd.Parameters["@USU"].Value = usuario;
-            cmd.Parameters.Add("@SEN", MySqlDbType.VarChar);
-            cmd.Parameters["@SEN"].Value = senha;
-            MySqlDataReader rs = cmd.ExecuteReader();
-            if (rs.Read())
-            {
-                this.id = rs.GetInt32("id");
-                this.usuario = rs.GetString("usuario");
-                this.senha = rs.GetString("senha");
-                this.trocar = rs.GetBoolean("trocar");
-            }
-            rs.Close();
+            return id;
         }
-        public void Update()
+
+        public static Login Validate(string usuario, string senha)
         {
-            string CmdString = "UPDATE login SET usuario = @USU, senha = @SEN, trocar = @TRO, ativo = @ATI WHERE id = @ID";
-            MySqlCommand cmd = new MySqlCommand(CmdString, DBConfig.getConnection());
-            cmd.Parameters.Add("@USU", MySqlDbType.VarChar);
-            cmd.Parameters["@USU"].Value = usuario;
-            cmd.Parameters.Add("@SEN", MySqlDbType.VarChar);
-            cmd.Parameters["@SEN"].Value = senha;
-            cmd.Parameters.Add("@TRO", MySqlDbType.Bit);
-            cmd.Parameters["@TRO"].Value = (trocar ? 1 : 0);
-            cmd.Parameters.Add("@ATI", MySqlDbType.Int32);
-            cmd.Parameters["@ATI"].Value = (ativo ? 1 : 0); ;
-            cmd.Parameters.Add("@ID", MySqlDbType.Int32);
-            cmd.Parameters["@ID"].Value = id;
-            cmd.ExecuteNonQuery();
+            CriteriaBuilder cb = new CriteriaBuilder();
+            cb.Add("usuario", usuario, MatchMode.Equals);
+            cb.Add("senha", senha, MatchMode.Equals, CriterionRelation.And);
+            cb.Add("ativo", 1, MatchMode.Equals, CriterionRelation.And);
+            List<Login> ll = GenericController<Login>.Select(cb);
+            if (ll == null)
+            {
+                return new Login();
+            }
+            else
+            {
+                if (ll.Count == 0)
+                {
+                    return new Login();
+
+                }
+                else
+                {
+                    return ll[0];
+                }
+            }
+        }
+        public List<Login> Select(CriteriaBuilder criteria)
+        {
+            return GenericController<Login>.Select(criteria);
+        }
+        public bool Update()
+        {
+            return GenericController<Login>.Update(this);
+        }
+        public bool Delete()
+        {
+            return GenericController<Login>.Delete(this);
+        }
+        public bool Insert()
+        {
+            return GenericController<Login>.Insert(this);
+        }
+
+        public Login Load(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

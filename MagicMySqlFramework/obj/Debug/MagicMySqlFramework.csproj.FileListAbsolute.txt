@@ -1,0 +1,5 @@
+C:\Users\User\Source\Repos\brunostrik\STX\MagicMySqlFramework\obj\Debug\MagicMySqlFramework.FormStx.resources
+C:\Users\User\Source\Repos\brunostrik\STX\MagicMySqlFramework\obj\Debug\MagicMySqlFramework.ListStx.resources
+C:\Users\User\Source\Repos\brunostrik\STX\MagicMySqlFramework\obj\Debug\MagicMySqlFramework.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\brunostrik\STX\MagicMySqlFramework\obj\Debug\MagicMySqlFramework.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\brunostrik\STX\MagicMySqlFramework\obj\Debug\MagicMySqlFramework.Properties.Resources.resources

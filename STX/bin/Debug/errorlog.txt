@@ -1,0 +1,272 @@
+[14/12/2018 16:17:15] Erro MagicSqlFramework.GenericController.Select: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE  '%%'' at line 1
+[14/12/2018 16:17:17] Erro MagicSqlFramework.GenericController.Select: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE  '%%'' at line 1
+[CMD]: SELECT * FROM STX.Filial nome LIKE  '%%' 
+[14/12/2018 16:18:32] Erro MagicSqlFramework.GenericController.Select: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE  '%%'' at line 1
+[CMD]: SELECT * FROM STX.Filial WHERE  nome LIKE  '%%' 
+[CMD]: SELECT * FROM STX.Filial WHERE  nome LIKE  '%ai%' 
+[CMD]: SELECT * FROM STX.Filial WHERE  nome LIKE  '%a%' 
+[CMD]: SELECT * FROM STX.IModel
+[14/12/2018 17:06:23] Erro MagicSqlFramework.GenericController.Select: Table 'stx.imodel' doesn't exist
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Vendedor
+[CMD]: SELECT * FROM STX.Vendedor
+[CMD]: SELECT * FROM STX.Login
+[CMD]: SELECT * FROM STX.Login
+[14/12/2018 17:57:07] Erro MagicSqlFramework.GenericController.Select: O objeto de tipo 'System.UInt64' não pode ser convertido no tipo 'System.Boolean'.
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[14/12/2018 18:08:20] Erro MagicSqlFramework.GenericController.Select: O objeto de tipo 'System.UInt64' não pode ser convertido no tipo 'System.Boolean'.
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[17/12/2018 10:09:27] Erro MagicSqlFramework.GenericController.Select: O objeto de tipo 'System.UInt64' não pode ser convertido no tipo 'System.Int32'.
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  'aaa'  AND  ativo =  '1' 
+[17/12/2018 10:21:06] Erro MagicSqlFramework.GenericController.Select: O objeto de tipo 'System.UInt64' não pode ser convertido no tipo 'System.Int32'.
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  'aaa'  AND  ativo =  '1' 
+[17/12/2018 10:21:45] Erro MagicSqlFramework.GenericController.Select: O objeto de tipo 'System.UInt64' não pode ser convertido no tipo 'System.Int32'.
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  'aaa'  AND  ativo =  '1' 
+[17/12/2018 10:21:48] Erro MagicSqlFramework.GenericController.Select: O objeto de tipo 'System.UInt64' não pode ser convertido no tipo 'System.Int32'.
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  'aaa'  AND  ativo =  '1' 
+[17/12/2018 10:21:48] Erro MagicSqlFramework.GenericController.Select: O objeto de tipo 'System.UInt64' não pode ser convertido no tipo 'System.Int32'.
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  'aaa'  AND  ativo =  '1' 
+[17/12/2018 10:21:49] Erro MagicSqlFramework.GenericController.Select: O objeto de tipo 'System.UInt64' não pode ser convertido no tipo 'System.Int32'.
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  'aaa'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Filial WHERE  nome LIKE  '%%' 
+[CMD]: SELECT * FROM STX.Filial WHERE  nome LIKE  '%%' 
+[CMD]: SELECT * FROM STX.Filial WHERE  nome LIKE  '%ai%' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  'aaa'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  'aaa'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  'aaa'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  'aaa'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  'aaa'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  'aaa'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  'aaa'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial WHERE  nome LIKE  '%ai%' 
+[CMD]: SELECT * FROM STX.Filial WHERE  nome LIKE  '%ai]%' 
+[CMD]: SELECT * FROM STX.Filial WHERE  nome LIKE  '%ai%' 
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[CMD]: SELECT * FROM STX.Filial
+[17/12/2018 14:22:58] Erro MagicSqlFramework.GenericController.Insert: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES (ativo, id, nome, )' at line 1
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial
+[CMD]: SELECT * FROM STX.Filial WHERE  nome LIKE  '%bu%' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: INSERT INTO Filial (ativo, id, nome, ) VALUES (ativo, id, nome, );
+[17/12/2018 14:24:59] Erro MagicSqlFramework.GenericController.Insert: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES (ativo, id, nome, )' at line 1
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: INSERT INTO Filial (ativo, id, nome, ) VALUES (1, 0, Bunda, );
+[17/12/2018 14:26:14] Erro MagicSqlFramework.GenericController.Insert: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES (1, 0, Bunda, )' at line 1
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: INSERT INTO Filial (ativo, id, nome) VALUES (1, 0, kladsbjkalhvb);
+[17/12/2018 14:31:43] Erro MagicSqlFramework.GenericController.Insert: Unknown column 'kladsbjkalhvb' in 'field list'
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: INSERT INTO Filial (ativo, id, nome) VALUES ('1', '0', 'NJKADSBFJASBJKGF');
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: UPDATE Filial SET ativo='1', id='9', nome='BURUGO',  WHERE id = 9
+[17/12/2018 14:33:06] Erro MagicSqlFramework.GenericController.Update: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id = 9' at line 1
+[SQL]: INSERT INTO Filial (ativo, id, nome) VALUES ('1', '0', 'KKK');
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: UPDATE Filial SET ativo='1', id='9', nome='BURURRRR',  WHERE id = 9
+[17/12/2018 14:33:29] Erro MagicSqlFramework.GenericController.Update: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id = 9' at line 1
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: DELETE FROM Filial WHERE id = 10
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: UPDATE Filial SET ativo='1', id='9', nome='HURR' WHERE id = 9
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: UPDATE Filial SET ativo='0', id='9', nome='HURR' WHERE id = 9
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: UPDATE Filial SET ativo='1', id='9', nome='HURR' WHERE id = 9
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: DELETE FROM Filial WHERE id = 9
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: INSERT INTO Filial (ativo, id, nome) VALUES ('1', '0', 'wefr');
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: DELETE FROM Filial WHERE id = 11
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: DELETE FROM Filial WHERE id = 4
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  nome LIKE  '%%' 
+[17/12/2018 15:01:11] Erro MagicSqlFramework.GenericController.Select: Unknown column 'nome' in 'where clause'
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  nome LIKE  '%%' 
+[17/12/2018 15:01:31] Erro MagicSqlFramework.GenericController.Select: Unknown column 'nome' in 'where clause'
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  nome LIKE  '%%' 
+[17/12/2018 15:04:16] Erro MagicSqlFramework.GenericController.Select: Unknown column 'nome' in 'where clause'
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario LIKE  '%%' 
+[SQL]: UPDATE Login SET Trocar='Não', id='1', ativo='1', usuario='teste', senha='cu' WHERE id = 1
+[17/12/2018 15:05:38] Erro MagicSqlFramework.GenericController.Update: Incorrect integer value: 'Não' for column 'trocar' at row 1
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario LIKE  '%%' 
+[SQL]: UPDATE Login SET ativo='1', id='1', usuario='teste', senha='cu' WHERE id = 1
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario LIKE  '%%' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario LIKE  '%asd%' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario LIKE  '%t%' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Login WHERE  usuario LIKE  '%%' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: INSERT INTO Filial (ativo, id, nome) VALUES ('1', '0', 'APUCARANA');
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: UPDATE Filial SET ativo='0', id='12', nome='APUCARANA' WHERE id = 12
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: UPDATE Filial SET ativo='0', id='12', nome='APUCARANA' WHERE id = 12
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: UPDATE Filial SET ativo='0', id='12', nome='APUCARANA city' WHERE id = 12
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: UPDATE Filial SET ativo='1', id='12', nome='APUCARANA' WHERE id = 12
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: DELETE FROM Filial WHERE id = 12
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: INSERT INTO Filial (ativo, id, nome) VALUES ('1', '0', 'ASTORGA');
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Filial WHERE  nome LIKE  '%S%' 
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: DELETE FROM Filial WHERE id = 13
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario LIKE  '%%' 
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Filial
+[SQL]: SELECT * FROM STX.Login
+[SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+[SQL]: SELECT * FROM STX.Login
+[SQL]: SELECT * FROM STX.Filial

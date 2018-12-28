@@ -1,0 +1,164 @@
+27/12/2018 16:08:44> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:08:49> SELECT * FROM filial
+27/12/2018 16:18:54> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:18:59> SELECT * FROM filial
+27/12/2018 16:21:51> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:21:53> SELECT * FROM filial
+27/12/2018 16:23:19> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:23:21> SELECT * FROM filial
+27/12/2018 16:28:52> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:28:56> SELECT * FROM filial
+27/12/2018 16:36:55> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:36:57> SELECT * FROM filial
+27/12/2018 16:38:10> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:38:12> SELECT * FROM filial
+27/12/2018 16:39:42> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:39:45> SELECT * FROM filial
+27/12/2018 16:43:17> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:43:20> SELECT * FROM filial
+27/12/2018 16:43:57> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:43:59> SELECT * FROM filial
+27/12/2018 16:44:46> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:44:47> SELECT * FROM filial
+27/12/2018 16:47:14> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:47:16> SELECT * FROM filial
+27/12/2018 16:47:20> SELECT * FROM filial WHERE  nome LIKE  '%ai%' 
+27/12/2018 16:47:24> SELECT * FROM filial WHERE  nome LIKE  '%aiaaa%' 
+27/12/2018 16:47:25> SELECT * FROM filial WHERE  nome LIKE  '%aiaaa%' 
+27/12/2018 16:47:25> SELECT * FROM filial WHERE  nome LIKE  '%aiaaa%' 
+27/12/2018 16:47:25> SELECT * FROM filial WHERE  nome LIKE  '%aiaaa%' 
+27/12/2018 16:48:17> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:48:19> SELECT * FROM filial
+27/12/2018 16:48:23> SELECT * FROM filial WHERE  nome LIKE  '%asdaf%' 
+27/12/2018 16:48:23> SELECT * FROM filial WHERE  nome LIKE  '%asdaf%' 
+27/12/2018 16:48:23> SELECT * FROM filial WHERE  nome LIKE  '%asdaf%' 
+27/12/2018 16:48:25> SELECT * FROM filial WHERE  nome LIKE  '%asdaf%' 
+27/12/2018 16:48:26> SELECT * FROM filial WHERE  nome LIKE  '%asdaf%' 
+27/12/2018 16:48:26> SELECT * FROM filial WHERE  nome LIKE  '%asdaf%' 
+27/12/2018 16:48:26> SELECT * FROM filial WHERE  nome LIKE  '%asdaf%' 
+27/12/2018 16:48:26> SELECT * FROM filial WHERE  nome LIKE  '%asdaf%' 
+27/12/2018 16:48:27> SELECT * FROM filial WHERE  nome LIKE  '%asdaf%' 
+27/12/2018 16:48:27> SELECT * FROM filial WHERE  nome LIKE  '%asdaf%' 
+27/12/2018 16:48:32> SELECT * FROM filial WHERE  nome LIKE  '%ai%' 
+27/12/2018 16:48:33> SELECT * FROM filial WHERE  nome LIKE  '%ai%' 
+27/12/2018 16:48:35> SELECT * FROM filial WHERE  nome LIKE  '%aiaaaa%' 
+27/12/2018 16:48:35> SELECT * FROM filial WHERE  nome LIKE  '%aiaaaa%' 
+27/12/2018 16:48:35> SELECT * FROM filial WHERE  nome LIKE  '%aiaaaa%' 
+27/12/2018 16:48:37> SELECT * FROM filial WHERE  nome LIKE  '%aiaaaa%' 
+27/12/2018 16:48:37> SELECT * FROM filial WHERE  nome LIKE  '%aiaaaa%' 
+27/12/2018 16:48:37> SELECT * FROM filial WHERE  nome LIKE  '%aiaaaa%' 
+27/12/2018 16:48:37> SELECT * FROM filial WHERE  nome LIKE  '%aiaaaa%' 
+27/12/2018 16:48:38> SELECT * FROM filial WHERE  nome LIKE  '%aiaaaa%' 
+27/12/2018 16:48:38> SELECT * FROM filial WHERE  nome LIKE  '%aiaaaa%' 
+27/12/2018 16:49:17> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:49:20> SELECT * FROM filial
+27/12/2018 16:49:23> SELECT * FROM filial
+27/12/2018 16:49:39> SELECT * FROM filial
+27/12/2018 16:49:45> SELECT * FROM filial
+27/12/2018 16:49:50> SELECT * FROM filial
+27/12/2018 16:49:59> SELECT * FROM filial
+27/12/2018 16:51:32> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:51:34> SELECT * FROM filial
+27/12/2018 16:51:35> SELECT * FROM filial
+27/12/2018 16:51:40> SELECT * FROM filial
+27/12/2018 16:51:45> SELECT * FROM filial
+27/12/2018 16:52:27> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 16:52:30> SELECT * FROM filial
+27/12/2018 16:52:31> SELECT * FROM filial
+27/12/2018 16:52:34> SELECT * FROM filial
+27/12/2018 17:00:41> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 17:00:44> SELECT * FROM filial
+27/12/2018 17:03:33> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+27/12/2018 17:03:36> SELECT * FROM filial
+28/12/2018 16:11:21> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:11:23> SELECT * FROM filial
+28/12/2018 16:12:58> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:13:00> SELECT * FROM filial
+28/12/2018 16:15:16> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:17:06> SELECT * FROM filial
+28/12/2018 16:17:40> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:17:42> SELECT * FROM filial
+28/12/2018 16:18:44> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:18:46> SELECT * FROM filial
+28/12/2018 16:29:29> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:29:33> SELECT * FROM filial
+28/12/2018 16:30:55> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:30:58> SELECT * FROM filial
+28/12/2018 16:31:30> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:31:34> SELECT * FROM filial
+28/12/2018 16:32:43> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:32:46> SELECT * FROM filial
+28/12/2018 16:33:08> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:33:10> SELECT * FROM filial
+28/12/2018 16:34:33> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:34:35> SELECT * FROM filial
+28/12/2018 16:35:40> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:35:42> SELECT * FROM filial
+28/12/2018 16:38:52> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:38:55> SELECT * FROM filial
+28/12/2018 16:42:00> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:42:04> SELECT * FROM filial
+28/12/2018 16:42:39> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:42:41> SELECT * FROM filial
+28/12/2018 16:43:19> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:43:21> SELECT * FROM filial
+28/12/2018 16:45:07> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:45:09> SELECT * FROM filial
+28/12/2018 16:46:58> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:47:00> SELECT * FROM filial
+28/12/2018 16:49:08> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:49:11> SELECT * FROM filial
+28/12/2018 16:50:56> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:50:59> SELECT * FROM filial
+28/12/2018 16:51:31> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:51:34> SELECT * FROM filial
+28/12/2018 16:54:13> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:54:15> SELECT * FROM filial
+28/12/2018 16:54:41> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:54:43> SELECT * FROM filial
+28/12/2018 16:54:56> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:54:59> SELECT * FROM filial
+28/12/2018 16:58:12> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 16:58:15> SELECT * FROM filial
+28/12/2018 17:01:48> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:01:50> SELECT * FROM filial
+28/12/2018 17:03:31> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:03:33> SELECT * FROM filial
+28/12/2018 17:09:52> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:09:54> SELECT * FROM filial
+28/12/2018 17:12:30> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:12:32> SELECT * FROM filial
+28/12/2018 17:14:43> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:14:44> SELECT * FROM filial
+28/12/2018 17:15:27> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:15:29> SELECT * FROM filial
+28/12/2018 17:15:56> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:15:58> SELECT * FROM filial
+28/12/2018 17:17:08> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:17:11> SELECT * FROM filial
+28/12/2018 17:17:43> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:17:45> SELECT * FROM filial
+28/12/2018 17:17:58> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:18:00> SELECT * FROM filial
+28/12/2018 17:18:24> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:18:27> SELECT * FROM filial
+28/12/2018 17:20:48> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:20:50> SELECT * FROM filial
+28/12/2018 17:22:19> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:22:20> SELECT * FROM filial
+28/12/2018 17:23:02> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:23:04> SELECT * FROM filial
+28/12/2018 17:23:47> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:23:49> SELECT * FROM filial
+28/12/2018 17:24:03> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:24:05> SELECT * FROM filial
+28/12/2018 17:25:07> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:25:09> SELECT * FROM filial
+28/12/2018 17:26:03> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:26:05> SELECT * FROM filial
+28/12/2018 17:27:26> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:27:30> SELECT * FROM filial
+28/12/2018 17:27:58> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:28:01> SELECT * FROM filial
+28/12/2018 17:28:52> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+28/12/2018 17:28:54> SELECT * FROM filial
