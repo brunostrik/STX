@@ -48,5 +48,10 @@ namespace STX
             form.MdiParent = this;
             form.Show();
         }
+
+        private void lembretesAgendadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.OpenList<Lembrete>("titulo");
+        }
     }
 }

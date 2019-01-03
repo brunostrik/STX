@@ -30,3 +30,5 @@ C:\Users\User\Source\Repos\brunostrik\STX\STX\obj\Debug\STX.exe
 C:\Users\User\Source\Repos\brunostrik\STX\STX\obj\Debug\STX.pdb
 C:\Users\User\Source\Repos\brunostrik\STX\STX\obj\Debug\STX.csprojAssemblyReference.cache
 C:\Users\User\Source\Repos\brunostrik\STX\STX\obj\Debug\STX.ForeignEntitySelectorBox.resources
+C:\Users\User\Source\Repos\brunostrik\STX\STX\obj\Debug\STX.FormStxBase.resources
+C:\Users\User\Source\Repos\brunostrik\STX\STX\obj\Debug\STX.FormLembrete.resources

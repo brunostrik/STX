@@ -1,9 +1,8 @@
 ﻿using System.Windows.Forms;
-using System.Reflection;
 
 namespace STX
 {
-    public partial class ForeignEntitySelectorBox<T> : UserControl, ISelector
+    public partial class ForeignEntitySelectorBox<T> : UserControl, ISelector where T : IModel<T>, new()
     {
         public T Entity { get; set; }
         private string DisplayField;
@@ -14,7 +13,23 @@ namespace STX
             DisplayField = ForeignKeyDisplayField;
             Display();
         }
-        private void Display() { 
+        public ForeignEntitySelectorBox(int idEntityToLoad, string ForeignKeyDisplayField)
+        {
+            InitializeComponent();
+            if (idEntityToLoad == 0)
+            {
+                Entity = new T();
+            }
+            else
+            {
+                Entity = GenericController<T>.Load(idEntityToLoad);
+            }
+            DisplayField = ForeignKeyDisplayField;
+            Display();
+        }
+       
+        private void Display()
+        {
             if (Entity == null)
             {
                 txtDisplay.Text = "(Nenhum item selecionado)";
@@ -34,12 +49,12 @@ namespace STX
 
         private void btnSelect_Click(object sender, System.EventArgs e)
         {
-            ListStx<T> lista = new ListStx<T>(DisplayField, this);
+            Program.OpenList<T>(DisplayField, this);
         }
 
         public void Return(object item)
         {
-            this.Entity = (T)item;
+            Entity = (T)item;
             Display();
         }
     }

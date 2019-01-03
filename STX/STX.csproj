@@ -76,6 +76,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\FormLembrete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormLembrete.Designer.cs">
+      <DependentUpon>FormLembrete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormStxBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormStxBase.Designer.cs">
+      <DependentUpon>FormStxBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Framework\StxAttributes.cs" />
     <Compile Include="Form\FormStx.cs">
       <SubType>Form</SubType>
@@ -113,10 +125,10 @@
     <Compile Include="Form\FormLogar.Designer.cs">
       <DependentUpon>FormLogar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMain.cs">
+    <Compile Include="Form\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.cs">
+    <Compile Include="Form\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormTrocaSenha.cs">
@@ -132,6 +144,8 @@
       <DependentUpon>ListFilial_old.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Filial.cs" />
+    <Compile Include="Model\Lembrete.cs" />
+    <Compile Include="Model\LembreteDestinatario.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="Model\Logs.cs" />
     <Compile Include="Model\Vendedor.cs" />
@@ -175,17 +189,23 @@
     <EmbeddedResource Include="Form\FormFilial.resx">
       <DependentUpon>FormFilial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormLembrete.resx">
+      <DependentUpon>FormLembrete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FormLoad.resx">
       <DependentUpon>FormLoad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormLogar.resx">
       <DependentUpon>FormLogar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMain.resx">
+    <EmbeddedResource Include="Form\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormStx.resx">
       <DependentUpon>FormStx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormStxBase.resx">
+      <DependentUpon>FormStxBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormTrocaSenha.resx">
       <DependentUpon>FormTrocaSenha.cs</DependentUpon>

@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace STX
 {
-    public partial class ListStx<T> : Form, IListForm
+    public partial class ListStx<T> : Form, IListForm where T : IModel<T>
     {
 
         private ISelector returnClass;
@@ -20,7 +21,12 @@ namespace STX
             this.searchProperty = searchProperty;
             if (returnClass != null)
             {
-                Text = Config.APP_NAME + " - Selecione um item:";
+                Text = Config.APP_NAME + " - Selecione um " + Config.APP_NAME + " - " + ((Table)typeof(T).GetCustomAttribute(typeof(Table), false)).NomeSingular + ":";
+            }
+            else
+            {
+                //Procura a anotacao na entidade e assim constroi o text do form
+                Text = Config.APP_NAME + " - " + Util.FirstCharToUpper(((Table)typeof(T).GetCustomAttribute(typeof(Table), false)).NomePlural);
             }
             AtualizarDados();
             dataGridView.CellFormatting += new DataGridViewCellFormattingEventHandler(dataGridView_CellFormatting);
@@ -164,6 +170,7 @@ namespace STX
         private void btnSelecionar_Click(object sender, EventArgs e)
         {
             returnClass.Return(itemSelecionado);
+            Close();
         }
 
         private void btnImprimir_Click(object sender, EventArgs e)
@@ -181,6 +188,11 @@ namespace STX
             if (dataGridView.Columns[e.ColumnIndex].HeaderText == "Senha" && e.Value != null)
             {
                 e.Value = new String('*', e.Value.ToString().Length);
+            }
+            else if ((dataGridView.Columns[e.ColumnIndex].HeaderText == "Valor" || dataGridView.Columns[e.ColumnIndex].HeaderText == "Preço") && e.Value != null)
+            {
+                //formatar como moeda
+                e.Value = string.Format("{0:C}", e.Value);
             }
         }
     }

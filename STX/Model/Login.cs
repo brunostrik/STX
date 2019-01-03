@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System;
+﻿using System;
+using System.Collections.Generic;
 
 
 namespace STX
@@ -10,21 +8,23 @@ namespace STX
     [Table("login", "usuário", "usuários")]
     public class Login : IModel<Login>
     {
-        [Browsable(false)]
+        [Field("id", "Código", SqlTypes.integer, true, true, true)]
         public int id { get; set; } = 0;
-        [DisplayName("Login")]
-        [Required(ErrorMessage = "Preencha o login")]
+
+        [Field("usuario", "User", SqlTypes.varchar, false, true, true)]
         public string usuario { get; set; } = "";
-        [DisplayName("Senha")]
-        [PasswordPropertyText]
-        [Required(ErrorMessage = "Preencha a senha")]
-        [DataType(DataType.Password)]
+
+        [Field("senha", "Senha", SqlTypes.password, false, true, false)]
         public string senha { get; set; } = "";
-        [Browsable(false)]
+
+        [Field("trocar", "Necessário trocar a senha", SqlTypes.boolean, false, true, true)]
         public int trocar = 0;
-        [Browsable(false)]
-        [DataType(DataType.Custom)]
-        public int ativo { get; set; } = 0;
+
+        [Field("ativo", "Ativado", SqlTypes.boolean, false, true, true)]
+        public bool ativo { get; set; } = true;
+
+        [Field("email", "E-mail", SqlTypes.varchar, false, true, true)]
+        public string email { get; set; } = "";
 
         public Login()
         {

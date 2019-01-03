@@ -270,3 +270,10 @@
 [SQL]: SELECT * FROM STX.Login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
 [SQL]: SELECT * FROM STX.Login
 [SQL]: SELECT * FROM STX.Filial
+03/01/2019 09:52:23> Erro MagicSqlFramework.GenericController.Select: Connection must be valid and open.
+03/01/2019 09:52:24> Erro MagicSqlFramework.GenericController.Select: Connection must be valid and open.
+03/01/2019 09:52:25> Erro MagicSqlFramework.GenericController.Select: Connection must be valid and open.
+03/01/2019 09:52:26> Erro MagicSqlFramework.GenericController.Select: Connection must be valid and open.
+03/01/2019 09:52:27> Erro MagicSqlFramework.GenericController.Select: Connection must be valid and open.
+03/01/2019 09:52:28> Erro MagicSqlFramework.GenericController.Select: Connection must be valid and open.
+03/01/2019 09:52:29> Erro MagicSqlFramework.GenericController.Select: Connection must be valid and open.

@@ -38,8 +38,10 @@
             this.filiaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.testeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ferramentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lembretesAgendadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +53,8 @@
             this.financeiroToolStripMenuItem,
             this.configuraçõesToolStripMenuItem,
             this.relatóriosToolStripMenuItem,
-            this.testeToolStripMenuItem});
+            this.testeToolStripMenuItem,
+            this.ferramentasToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(790, 24);
@@ -112,6 +115,28 @@
             this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             // 
+            // testeToolStripMenuItem
+            // 
+            this.testeToolStripMenuItem.Name = "testeToolStripMenuItem";
+            this.testeToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.testeToolStripMenuItem.Text = "Teste";
+            this.testeToolStripMenuItem.Click += new System.EventHandler(this.testeToolStripMenuItem_Click);
+            // 
+            // ferramentasToolStripMenuItem
+            // 
+            this.ferramentasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lembretesAgendadosToolStripMenuItem});
+            this.ferramentasToolStripMenuItem.Name = "ferramentasToolStripMenuItem";
+            this.ferramentasToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.ferramentasToolStripMenuItem.Text = "Ferramentas";
+            // 
+            // lembretesAgendadosToolStripMenuItem
+            // 
+            this.lembretesAgendadosToolStripMenuItem.Name = "lembretesAgendadosToolStripMenuItem";
+            this.lembretesAgendadosToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.lembretesAgendadosToolStripMenuItem.Text = "Lembretes agendados";
+            this.lembretesAgendadosToolStripMenuItem.Click += new System.EventHandler(this.lembretesAgendadosToolStripMenuItem_Click);
+            // 
             // statusStrip
             // 
             this.statusStrip.Location = new System.Drawing.Point(0, 375);
@@ -119,13 +144,6 @@
             this.statusStrip.Size = new System.Drawing.Size(790, 22);
             this.statusStrip.TabIndex = 1;
             this.statusStrip.Text = "statusStrip";
-            // 
-            // testeToolStripMenuItem
-            // 
-            this.testeToolStripMenuItem.Name = "testeToolStripMenuItem";
-            this.testeToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.testeToolStripMenuItem.Text = "Teste";
-            this.testeToolStripMenuItem.Click += new System.EventHandler(this.testeToolStripMenuItem_Click);
             // 
             // FormMain
             // 
@@ -160,5 +178,7 @@
         private System.Windows.Forms.ToolStripMenuItem filiaisToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem testeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ferramentasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lembretesAgendadosToolStripMenuItem;
     }
 }

@@ -50,7 +50,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDisplay.Enabled = false;
-            this.txtDisplay.Location = new System.Drawing.Point(4, 0);
+            this.txtDisplay.Location = new System.Drawing.Point(0, 0);
             this.txtDisplay.Name = "txtDisplay";
             this.txtDisplay.Size = new System.Drawing.Size(181, 20);
             this.txtDisplay.TabIndex = 1;

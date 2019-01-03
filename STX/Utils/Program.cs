@@ -14,8 +14,6 @@ namespace STX
         public static FormTrocaSenha formTrocaSenha;
         public static FormFilial formFilial;
 
-        public static ListLogin listLogin;
-
         [STAThread]
         static void Main()
         {
@@ -25,30 +23,25 @@ namespace STX
             Application.Run(formMain);
         }
 
-        public static void OpenForm<T>(IModel<T> entity, IListForm listaRetorno = null)
+        public static void OpenForm<T>(IModel<T> entity, IListForm listaRetorno = null) where T : IModel<T>
         {
-            /*if (entity.GetType().Equals(typeof(Filial))) //FILIAL
+            //Forms não genéricos
+            switch (entity.GetType().Name)
             {
-                //FormFilial frm = new FormFilial((Filial)entity, listaRetorno);
-                //frm.MdiParent = formMain;
-                //frm.Show();
-                FormStx<Filial> frm = new FormStx<Filial>(((Filial)entity), listaRetorno);
-                frm.MdiParent = formMain;
-                frm.Show();
+                case "Lembrete":
+                    FormLembrete frm = new FormLembrete(entity as Lembrete, listaRetorno);
+                    frm.MdiParent = formMain;
+                    frm.Show();
+                    break;
+                default: //Forms genéricos
+                    FormStx<T> form = new FormStx<T>((T)entity, listaRetorno);
+                    form.MdiParent = formMain;
+                    form.Show();
+                    break;
             }
-            else if (entity.GetType().Equals(typeof(Login)))
-            {
-
-            }
-            else
-            {
-                Alerts.Message("Não implementado: " + entity.GetType().ToString());
-            }*/
-            FormStx<T> form = new FormStx<T>((T)entity, listaRetorno);
-            form.MdiParent = formMain;
-            form.Show();
+            
         }
-        public static void OpenList<T>(string searchProperty = "", ISelector returnSelector = null)
+        public static void OpenList<T>(string searchProperty = "", ISelector returnSelector = null) where T : IModel<T>
         {
            ListStx<T> frm = new ListStx<T>(searchProperty, returnSelector);
            frm.MdiParent = formMain;

@@ -11,6 +11,8 @@ namespace STX
         public Table(string tableName, string nomeSingular, string nomePlural)
         {
             TableName = tableName;
+            NomeSingular = nomeSingular;
+            NomePlural = nomePlural;
         }
     }
     public class Field : Attribute
@@ -40,12 +42,14 @@ namespace STX
         public Type FkEntity { get; set; }
         public string ForeignKeyDisplayField { get; set; }
         public string ForeignKeyField { get; set; }
-        public ForeignKey(Type fkEntity, string foreignKeyDisplayField, string foreignKeyField = "id")
+        public string ForeignKeyAlias { get; set; }
+        public ForeignKey(Type fkEntity, string foreignKeyDisplayField, string foreignKeyField = "id", string foreignKeyAlias = "")
         {
             FkEntity = fkEntity;
             ForeignKeyDisplayField = foreignKeyDisplayField;
             ForeignKeyField = foreignKeyField;
+            ForeignKeyAlias = foreignKeyAlias;
         }
     }
-    public enum SqlTypes { varchar = 0, integer = 1, real = 2, boolean = 3, datetime = 4, longtext = 5, money = 6, foreignKey = 7 }
+    public enum SqlTypes { varchar = 0, integer = 1, real = 2, boolean = 3, datetime = 4, longtext = 5, money = 6, foreignKey = 7, password = 8}
 }

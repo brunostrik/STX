@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace STX
 {
-    public partial class FormStx<T> : Form
+    public partial class FormStx<T> : Form where T : IModel<T>
     {
 
         private T entity;
@@ -14,7 +14,9 @@ namespace STX
         public FormStx(T e, IListForm lf = null)
         {
             InitializeComponent();
-            Text = Config.APP_NAME + " - " + "Filial";
+            entity = e;
+            //Encontra o nome no singular do elemento
+            Text = Config.APP_NAME + " - " + Util.FirstCharToUpper(((Table)e.GetType().GetCustomAttribute(typeof(Table), false)).NomeSingular);
             listaRetorno = lf;
             DefineEntidadeCampos(e);
             Size = new System.Drawing.Size(tableLayoutPanel.Width + 50, tableLayoutPanel.Height + 110);
@@ -39,18 +41,24 @@ namespace STX
                         //Descobrindo o tipo da sub-entidade e a instanciando com reflection, chamando método herdado 
                         //e outro reflection para instanciar o componente genérico com base na sub-entidade instanciada
                         //PERIGO, BRUXARIA MUITO FORTE, ALTA PROBABIIDADE CTHULHU - SEMPRE RODAR DEBUG
+                        //Define o tipo do elemento a ser exibido
                         var selectorType = typeof(ForeignEntitySelectorBox<>);
-                        Type[] typeArgs = { ((ForeignKey)ann).FkEntity };
-                        object FkEntityLoaded = Activator.CreateInstance(typeArgs[0]);
-                        MethodInfo methodInfo = FkEntityLoaded.GetType().GetMethod("Load");
-                        object[] methodParams = { prop.GetValue(entity) };
-                        FkEntityLoaded = methodInfo.Invoke(FkEntityLoaded, methodParams);
-                        object[] args = { FkEntityLoaded, ((ForeignKey)ann).ForeignKeyDisplayField };
+                        Type[] typeArgs = { ((ForeignKey)ann).FkEntity }; //GRANDE SEGREDO DO UNIVERSO
+                        //Usando o reflection 
+                        object[] args = { Convert.ToInt32(prop.GetValue(entity)), ((ForeignKey)ann).ForeignKeyDisplayField };
                         var makeme = selectorType.MakeGenericType(typeArgs);
                         object o = Activator.CreateInstance(makeme, args);
                         ctl = o as Control;
+                        Label lbl = new Label();
+                        //Descobre a anotacao do field com o nome para gerar a label desse menino já aqui
+                        lbl.Text = Util.FirstCharToUpper(((ForeignKey)ann).ForeignKeyAlias);
+                        lbl.Anchor = AnchorStyles.Right;
+                        lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+                        tableLayoutPanel.Controls.Add(lbl);
+                        tableLayoutPanel.Controls.Add(ctl); //add o ctl na grid
+
                     }
-                    else if (ann.GetType() == typeof(Field))
+                    if (ann.GetType() == typeof(Field))
                     {
                         if (((Field)ann).Visible) //se nao for visivel nem adiciona o campo
                         {
@@ -76,9 +84,6 @@ namespace STX
                                     dts.EntityProperty = prop;
                                     ctl = dts;
                                     break;
-                                case SqlTypes.foreignKey:
-                                    //Ignora e processa em outro momento
-                                    break;
                                 case SqlTypes.integer:
                                     TextBoxNumber tbn = new TextBoxNumber();
                                     tbn.Value = Convert.ToInt32(prop.GetValue(entity));
@@ -90,6 +95,8 @@ namespace STX
                                     tbx.Text = prop.GetValue(entity).ToString();
                                     tbx.EntityProperty = prop;
                                     tbx.Multiline = true;
+                                    tbx.Width = ((Field)ann).ComponentWidth;
+                                    tbx.Height = Convert.ToInt32(tbx.Width / 3);
                                     ctl = tbx;
                                     break;
                                 case SqlTypes.money:
@@ -110,15 +117,27 @@ namespace STX
                                     txt.Width = ((Field)ann).ComponentWidth;
                                     ctl = txt;
                                     break;
+                                case SqlTypes.password:
+                                    TextBoxStx pwd = new TextBoxStx();
+                                    pwd.Text = prop.GetValue(entity).ToString();
+                                    pwd.EntityProperty = prop;
+                                    pwd.Width = ((Field)ann).ComponentWidth;
+                                    pwd.UseSystemPasswordChar = true;
+                                    ctl = pwd;
+                                    break;
                             }
 
                             if (((Field)ann).IsPrimaryAutoIncrement) //autoincrement nao deve ser habilitado
                             {
                                 ctl.Enabled = false;
                             }
-                            tableLayoutPanel.Controls.Add(ctl); //add o ctl na grid
+
                         }
                     }
+                }
+                if (ctl.GetType() != typeof(Control))
+                {
+                    tableLayoutPanel.Controls.Add(ctl); //add o ctl na grid
                 }
             }
         }

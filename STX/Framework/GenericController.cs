@@ -171,39 +171,7 @@ namespace STX
                 throw x;
             }
         }
-        /*
-        public static List<T> Select(CriteriaBuilder criteria = null)
-        {
-            try
-            {
-                List<T> list = new List<T>();
-                string CmdString = "SELECT * FROM ";
-                CmdString += typeof(T).ToString();
-                if (criteria != null)
-                {
-                    CmdString += " WHERE ";
-                    CmdString += criteria.GetQuery();
-                }
-                if (Config.DEBUG_MODE)
-                {
-                    ErrorLog("[SQL]: " + CmdString);
-                }
-                MySqlCommand cmd = new MySqlCommand(CmdString, DBConfig.getConnection());
-                MySqlDataReader rs = cmd.ExecuteReader();
-                var dt = new DataTable();
-                dt.Load(rs);
-                list = ConvertToList<T>(dt);
-                rs.Close();
-                return list;
-            }
-            catch (Exception x)
-            {
-                ErrorLog("[" + DateTime.Now + "] Erro MagicSqlFramework.GenericController.Select: " + x.Message);
-                return null;
-            }
-        }
-        */
-
+       
         public static Hashtable Entity2Hashtable(T entity)
         {
             Hashtable table = new Hashtable();
