@@ -6,12 +6,20 @@ namespace STX
     {
 
         private string criteriaQuery;
+        private string orderByQuery;
 
         public CriteriaBuilder()
         {
             criteriaQuery = "";
+            orderByQuery = "";
         }
-        public void Add(string property, object value, MatchMode mode, CriterionRelation relation = CriterionRelation.None)
+        public void AddOrderBy(string field, Ordenation ordenation)
+        {
+            orderByQuery = " ORDER BY ";
+            orderByQuery += field;
+            orderByQuery += (ordenation == Ordenation.Asc ? " ASC" : "DESC");
+        }
+        public void AddWhere(string property, object value, MatchMode mode, CriterionRelation relation = CriterionRelation.None)
         {
             if (criteriaQuery.Length > 0)
             {
@@ -23,6 +31,10 @@ namespace STX
                 {
                     criteriaQuery += " OR ";
                 }
+            }
+            else
+            {
+                criteriaQuery += " WHERE ";
             }
             criteriaQuery += " " + property;
             switch (mode)
@@ -67,6 +79,10 @@ namespace STX
         {
             return criteriaQuery;
         }
+        public string GetOrderBy()
+        {
+            return orderByQuery;
+        }
     }
     public enum MatchMode : int
     {
@@ -75,5 +91,9 @@ namespace STX
     public enum CriterionRelation : int
     {
         None, And, Or
+    }
+    public enum Ordenation : int
+    {
+        Asc = 0, Desc = 1
     }
 }

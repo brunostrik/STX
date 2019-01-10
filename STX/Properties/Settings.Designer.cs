@@ -23,39 +23,15 @@ namespace STX.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("ti@strikturismo.com.br")]
-        public string StxMailUser {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ConnectionString {
             get {
-                return ((string)(this["StxMailUser"]));
+                return ((string)(this["ConnectionString"]));
             }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("strikturismo2002")]
-        public string StxMailPassword {
-            get {
-                return ((string)(this["StxMailPassword"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("mail.strikturismo.com.br")]
-        public string StxMailServer {
-            get {
-                return ((string)(this["StxMailServer"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("465")]
-        public int StxMailPort {
-            get {
-                return ((int)(this["StxMailPort"]));
+            set {
+                this["ConnectionString"] = value;
             }
         }
     }

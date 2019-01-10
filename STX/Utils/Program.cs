@@ -13,6 +13,7 @@ namespace STX
         public static FormMain formMain;
         public static FormTrocaSenha formTrocaSenha;
         public static FormFilial formFilial;
+        public static ListLembrete listLembrete;
 
         [STAThread]
         static void Main()
@@ -26,10 +27,10 @@ namespace STX
         public static void OpenForm<T>(IModel<T> entity, IListForm listaRetorno = null) where T : IModel<T>
         {
             //Forms não genéricos
-            switch (entity.GetType().Name)
+            switch (typeof(T).Name)
             {
                 case "Lembrete":
-                    FormLembrete frm = new FormLembrete(entity as Lembrete, listaRetorno);
+                    FormLembrete frm = new FormLembrete(listaRetorno);
                     frm.MdiParent = formMain;
                     frm.Show();
                     break;
@@ -43,9 +44,20 @@ namespace STX
         }
         public static void OpenList<T>(string searchProperty = "", ISelector returnSelector = null) where T : IModel<T>
         {
-           ListStx<T> frm = new ListStx<T>(searchProperty, returnSelector);
-           frm.MdiParent = formMain;
-           frm.Show();
+            //Forms não genéricos
+            switch (typeof(T).Name)
+            {
+                case "Lembrete":
+                    listLembrete = new ListLembrete(returnSelector);
+                    listLembrete.MdiParent = formMain;
+                    listLembrete.Show();
+                    break;
+                default:
+                    ListStx<T> frm = new ListStx<T>(searchProperty, returnSelector);
+                    frm.MdiParent = formMain;
+                    frm.Show();
+                    break;
+            }
         }
 
     }

@@ -5,6 +5,7 @@ using System.Data;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Configuration;
 
 namespace STX
 {
@@ -21,7 +22,8 @@ namespace STX
             }
             else
             {
-                CONNECTION_STRING = LoadConfigFile();
+                //CONNECTION_STRING = LoadConfigFile();
+                CONNECTION_STRING = ConfigurationManager.AppSettings.Get("ConnectionString");
                 return GetConnectionString();
             }
         }
@@ -63,10 +65,12 @@ namespace STX
             //RETORNA 0 SE ESTA TUDO CERTO
             //RETORNA 1 SE NAO TEM ARQUIVO DE CONFIGURACAO
             //RETORNA 2 SE ESTA CONFIGURADO POREM NAO CONECTOU (REDE CAGADA)
+            /*
             if (!File.Exists(@"database.cfg"))
             {
                 return 1;
             }
+            */
             try
             {
                 new MySqlCommand("SELECT 1+1", getConnection()).ExecuteScalar();
@@ -117,6 +121,10 @@ namespace STX
             {
                 return null;
             }
+        }
+        public static string DateTimeSQLFormat(DateTime dt)
+        {
+            return dt.Year + "-" + dt.Month + "-" + dt.Day + " " + dt.Hour + ":" + dt.Minute + ":" + dt.Second;
         }
     }
 }

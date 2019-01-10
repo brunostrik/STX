@@ -1,9 +1,8 @@
-﻿using System;
+﻿using STX.Properties;
+using System;
 using System.Linq;
-using System.Net.Mail;
 using System.Net;
-using STX.Properties;
-using System.Collections.Generic;
+using System.Net.Mail;
 
 namespace STX
 {
@@ -18,27 +17,25 @@ namespace STX
                 default: return input.First().ToString().ToUpper() + input.Substring(1);
             }
         }
-        public static void SendMail(string mailFrom, List<string> mailTo, string subject, string message)
-        {            
-            //Config do server
-            SmtpClient smtp = new SmtpClient();
-            smtp.Port = Settings.Default.StxMailPort; 
-            smtp.EnableSsl = true;
-            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-            smtp.UseDefaultCredentials = false;
-            smtp.Credentials = new NetworkCredential(Settings.Default.StxMailUser, Settings.Default.StxMailPassword);
-            smtp.Host = Settings.Default.StxMailServer;
-            //Monta o email
+        public static void SendMail(string mailFrom, string mailTo, string subject, string message)
+        {
             MailMessage mail = new MailMessage();
-            mail.From = new MailAddress(Settings.Default.StxMailUser, "STX - " + mailFrom);
-            foreach (string m in mailTo)
-            {
-                mail.To.Add(new MailAddress(m));
-            }         
-            mail.IsBodyHtml = true;
-            mail.Subject = subject;
-            mail.Body = message;
+            mail.From = new MailAddress("ti@strikturismo.com.br", Config.APP_NAME);
+            // The important part -- configuring the SMTP client
+            SmtpClient smtp = new SmtpClient();
+            smtp.Port = 587;   // [1] You can try with 465 also, I always used 587 and got success
+            smtp.EnableSsl = false;// true;
+            smtp.DeliveryMethod = SmtpDeliveryMethod.Network; // [2] Added this
+            smtp.UseDefaultCredentials = false; // [3] Changed this
+            smtp.Credentials = new NetworkCredential("ti@strikturismo.com.br", "strikturismo2002");  // [4] Added this. Note, first parameter is NOT string.
+            smtp.Host = "mail.strikturismo.com.br";
+            //recipient address
+            mail.To.Add(new MailAddress(mailTo));
             mail.ReplyTo = new MailAddress(mailFrom);
+            //Formatted mail body
+            mail.Subject = subject;
+            mail.IsBodyHtml = true;
+            mail.Body = message;
             smtp.Send(mail);
         }
     }

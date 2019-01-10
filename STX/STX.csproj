@@ -88,12 +88,16 @@
     <Compile Include="Form\FormStxBase.Designer.cs">
       <DependentUpon>FormStxBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Framework\LembreteControl.cs" />
     <Compile Include="Framework\StxAttributes.cs" />
     <Compile Include="Form\FormStx.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\FormStx.Designer.cs">
       <DependentUpon>FormStx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\ListLembrete.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="List\ListLogin.cs">
       <SubType>Form</SubType>
@@ -137,17 +141,18 @@
     <Compile Include="Form\FormTrocaSenha.Designer.cs">
       <DependentUpon>FormTrocaSenha.cs</DependentUpon>
     </Compile>
-    <Compile Include="List\ListFilial_old.cs">
+    <Compile Include="List\ListStxBase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="List\ListFilial_old.Designer.cs">
-      <DependentUpon>ListFilial_old.cs</DependentUpon>
+    <Compile Include="List\ListStxBase.Designer.cs">
+      <DependentUpon>ListStxBase.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Filial.cs" />
     <Compile Include="Model\Lembrete.cs" />
     <Compile Include="Model\LembreteDestinatario.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="Model\Logs.cs" />
+    <Compile Include="Model\Mail.cs" />
     <Compile Include="Model\Vendedor.cs" />
     <Compile Include="Utils\Alerts.cs" />
     <Compile Include="Utils\ComboBoxSimNao.cs">
@@ -210,14 +215,17 @@
     <EmbeddedResource Include="Form\FormTrocaSenha.resx">
       <DependentUpon>FormTrocaSenha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="List\ListLembrete.resx">
+      <DependentUpon>ListLembrete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="List\ListLogin.resx">
       <DependentUpon>ListLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="List\ListStx.resx">
       <DependentUpon>ListStx.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="List\ListFilial_old.resx">
-      <DependentUpon>ListFilial_old.cs</DependentUpon>
+    <EmbeddedResource Include="List\ListStxBase.resx">
+      <DependentUpon>ListStxBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -256,6 +264,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
+    <None Include="Resources\arrow_left.png" />
+    <None Include="Resources\arrow_right.png" />
     <None Include="Resources\disk.png" />
     <None Include="Resources\lock.png" />
     <None Include="Resources\arrow_refresh.png" />

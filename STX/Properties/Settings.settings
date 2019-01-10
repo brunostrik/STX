@@ -1,18 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="STX.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
   <Profiles />
-  <Settings>
-    <Setting Name="StxMailUser" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">ti@strikturismo.com.br</Value>
-    </Setting>
-    <Setting Name="StxMailPassword" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">strikturismo2002</Value>
-    </Setting>
-    <Setting Name="StxMailServer" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">mail.strikturismo.com.br</Value>
-    </Setting>
-    <Setting Name="StxMailPort" Type="System.Int32" Scope="Application">
-      <Value Profile="(Default)">465</Value>
-    </Setting>
-  </Settings>
+  <Settings />
 </SettingsFile>

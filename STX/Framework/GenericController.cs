@@ -35,14 +35,14 @@ namespace STX
                 cmdString += ");";
                 if (Config.DEBUG_MODE)
                 {
-                    ErrorLog("[SQL]: " + cmdString);
+                    Log(cmdString);
                 }
                 MySqlCommand cmd = new MySqlCommand(cmdString, getConnection());
                 return cmd.ExecuteNonQuery() > 0;
             }
             catch (Exception x)
             {
-                ErrorLog("[" + DateTime.Now + "] Erro MagicSqlFramework.GenericController.Insert: " + x.Message);
+                ErrorLog("Erro MagicSqlFramework.GenericController.Insert: " + x.Message);
                 return false;
             }
         }
@@ -66,14 +66,14 @@ namespace STX
                 cmdString += ht["id"];
                 if (Config.DEBUG_MODE)
                 {
-                    ErrorLog("[SQL]: " + cmdString);
+                    Log(cmdString);
                 }
                 MySqlCommand cmd = new MySqlCommand(cmdString, getConnection());
                 return cmd.ExecuteNonQuery() > 0;
             }
             catch (Exception x)
             {
-                ErrorLog("[" + DateTime.Now + "] Erro MagicSqlFramework.GenericController.Update: " + x.Message);
+                ErrorLog("Erro MagicSqlFramework.GenericController.Update: " + x.Message);
                 return false;
             }
         }
@@ -88,14 +88,14 @@ namespace STX
                 cmdString += ht["id"];
                 if (Config.DEBUG_MODE)
                 {
-                    ErrorLog("[SQL]: " + cmdString);
+                    Log(cmdString);
                 }
                 MySqlCommand cmd = new MySqlCommand(cmdString, getConnection());
                 return cmd.ExecuteNonQuery() > 0;
             }
             catch (Exception x)
             {
-                ErrorLog("[" + DateTime.Now + "] Erro MagicSqlFramework.GenericController.Delete: " + x.Message);
+                ErrorLog("Erro MagicSqlFramework.GenericController.Delete: " + x.Message);
                 return false;
             }
         }
@@ -104,24 +104,21 @@ namespace STX
             try
             {
                 //identificar o nome da tabela no banco de dados usando o StxFramework
-                string nomeTabela = typeof(T).GetCustomAttributesData().Where(item => item.AttributeType == typeof(Table)).FirstOrDefault().ConstructorArguments[0].ToString().Replace("\"", ""); //(typeof(Table), false)[0].ToString();
-                /*
-                //identificar os campos da tabela no banco de dados usando o stx framework
-                var props = typeof(T).GetProperties();
-                List<string> campos = new List<string>();
-                foreach (var prop in props)
-                {
-                    campos.Add(prop.GetCustomAttributesData().Where(item => item.AttributeType == typeof(Field)).FirstOrDefault().ConstructorArguments[0].ToString().Replace("\"", ""));
-                }
-                */
+                string nomeTabela = typeof(T).GetCustomAttributesData().Where(item => item.AttributeType == typeof(Table)).FirstOrDefault().ConstructorArguments[0].ToString().Replace("\"", "");
                 //Monta o SQL
                 List<T> list = new List<T>();
                 string CmdString = "SELECT * FROM ";
                 CmdString += nomeTabela;
                 if (criteria != null)
                 {
-                    CmdString += " WHERE ";
-                    CmdString += criteria.GetQuery();
+                    if (!string.IsNullOrWhiteSpace(criteria.GetQuery()))
+                    {;
+                        CmdString += criteria.GetQuery();
+                    }
+                    if (!string.IsNullOrWhiteSpace(criteria.GetOrderBy()))
+                    {
+                        CmdString += criteria.GetOrderBy();
+                    }
                 }
                 if (Config.DEBUG_MODE)
                 {

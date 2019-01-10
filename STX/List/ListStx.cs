@@ -38,7 +38,7 @@ namespace STX
             if (filtro != "")
             {
                 cb = new CriteriaBuilder();
-                cb.Add(searchProperty, filtro, MatchMode.Like);
+                cb.AddWhere(searchProperty, filtro, MatchMode.Like);
             }
             listItems = GenericController<T>.Select(cb);
             CarregarGrid(listItems);

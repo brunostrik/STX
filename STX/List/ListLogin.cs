@@ -29,7 +29,7 @@ namespace STX
         private void CarregarDados(string filtro = "")
         {
             CriteriaBuilder cb = new CriteriaBuilder();
-            cb.Add("usuario", filtro, MatchMode.Like);
+            cb.AddWhere("usuario", filtro, MatchMode.Like);
             listItems = new Login().Select(cb);
             dataGridView.DataSource = listItems;
             dataGridView.Refresh();

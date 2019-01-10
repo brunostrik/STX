@@ -39,9 +39,9 @@ namespace STX
         public static Login Validate(string usuario, string senha)
         {
             CriteriaBuilder cb = new CriteriaBuilder();
-            cb.Add("usuario", usuario, MatchMode.Equals);
-            cb.Add("senha", senha, MatchMode.Equals, CriterionRelation.And);
-            cb.Add("ativo", 1, MatchMode.Equals, CriterionRelation.And);
+            cb.AddWhere("usuario", usuario, MatchMode.Equals);
+            cb.AddWhere("senha", senha, MatchMode.Equals, CriterionRelation.And);
+            cb.AddWhere("ativo", 1, MatchMode.Equals, CriterionRelation.And);
             List<Login> ll = GenericController<Login>.Select(cb);
             if (ll == null)
             {

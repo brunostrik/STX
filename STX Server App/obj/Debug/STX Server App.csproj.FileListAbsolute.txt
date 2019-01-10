@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\brunostrik\STX\STX Server App\obj\Debug\STX Server App.csprojAssemblyReference.cache
+C:\Users\User\source\repos\brunostrik\STX\STX Server App\obj\Debug\STX_Server_App.ControlPanel.resources
+C:\Users\User\source\repos\brunostrik\STX\STX Server App\obj\Debug\STX_Server_App.Properties.Resources.resources
+C:\Users\User\source\repos\brunostrik\STX\STX Server App\obj\Debug\STX Server App.csproj.GenerateResource.cache
+C:\Users\User\source\repos\brunostrik\STX\STX Server App\obj\Debug\STX Server App.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\brunostrik\STX\STX Server App\bin\Debug\STX Server App.exe.config
+C:\Users\User\source\repos\brunostrik\STX\STX Server App\bin\Debug\STX Server App.exe
+C:\Users\User\source\repos\brunostrik\STX\STX Server App\bin\Debug\STX Server App.pdb
+C:\Users\User\source\repos\brunostrik\STX\STX Server App\bin\Debug\MySql.Data.dll
+C:\Users\User\source\repos\brunostrik\STX\STX Server App\bin\Debug\Google.Protobuf.dll
+C:\Users\User\source\repos\brunostrik\STX\STX Server App\bin\Debug\MySql.Data.xml
+C:\Users\User\source\repos\brunostrik\STX\STX Server App\obj\Debug\STX Server App.csproj.CopyComplete
+C:\Users\User\source\repos\brunostrik\STX\STX Server App\obj\Debug\STX Server App.exe
+C:\Users\User\source\repos\brunostrik\STX\STX Server App\obj\Debug\STX Server App.pdb

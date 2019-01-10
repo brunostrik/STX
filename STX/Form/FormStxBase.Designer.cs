@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStxBase));
             this.toolStrip = new System.Windows.Forms.ToolStrip();
@@ -45,7 +45,7 @@
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Size = new System.Drawing.Size(654, 25);
             this.toolStrip.TabIndex = 3;
-            this.toolStrip.Text = "toolStrip1";
+            this.toolStrip.Text = "toolStrip";
             // 
             // btnSalvar
             // 
@@ -67,8 +67,8 @@
             // 
             // groupBox
             // 
-            this.groupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.groupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox.Location = new System.Drawing.Point(13, 29);
             this.groupBox.Name = "groupBox";
@@ -94,7 +94,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox groupBox;
+        public System.Windows.Forms.GroupBox groupBox;
         public System.Windows.Forms.ToolStrip toolStrip;
         public System.Windows.Forms.ToolStripButton btnSalvar;
         public System.Windows.Forms.ToolStripButton btnExcluir;
