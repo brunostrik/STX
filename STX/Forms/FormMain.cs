@@ -36,13 +36,6 @@ namespace STX
             Program.OpenList<Login>("usuario");
         }
 
-        private void testeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormStx<Filial> form = new FormStx<Filial>(new Filial());
-            form.MdiParent = this;
-            form.Show();
-        }
-
         private void lembretesAgendadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.OpenList<Lembrete>("");
@@ -62,7 +55,7 @@ namespace STX
 
         private void ConfigMenu() //OCULTAR AQUI DO MENU AS FUNCIONALIDADES AINDA NAO INSTALADAS PARA CONSTRUIR RELEASES PARCIAIS
         {
-            string[] manter = { "Ferramentas" };
+            string[] manter = { "Ferramentas", "Vendas" };
             foreach (ToolStripMenuItem menu in menuStrip.Items)
             {
                 menu.Visible = false;
@@ -75,6 +68,11 @@ namespace STX
                 }
                 
             }
+        }
+
+        private void passageirosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.OpenList<Passageiro>("nome");
         }
     }
 }

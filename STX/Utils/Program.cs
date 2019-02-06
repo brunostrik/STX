@@ -30,9 +30,14 @@ namespace STX
             switch (typeof(T).Name)
             {
                 case "Lembrete":
-                    FormLembrete frm = new FormLembrete(listaRetorno);
-                    frm.MdiParent = formMain;
-                    frm.Show();
+                    FormLembrete frmLembrete = new FormLembrete(listaRetorno);
+                    frmLembrete.MdiParent = formMain;
+                    frmLembrete.Show();
+                    break;
+                case "Passageiro":
+                    FormPassageiro frmPassageiro = new FormPassageiro(listaRetorno);
+                    frmPassageiro.MdiParent = formMain;
+                    frmPassageiro.Show();
                     break;
                 default: //Forms genéricos
                     FormStx<T> form = new FormStx<T>((T)entity, listaRetorno);

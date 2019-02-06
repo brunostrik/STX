@@ -294,3 +294,9 @@
 08/01/2019 15:29:58> Erro MagicSqlFramework.GenericController.Select: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'idloginremetente =  '1'  ORDER BY datahoraenvio ASC' at line 1
 08/01/2019 15:30:01> Erro MagicSqlFramework.GenericController.Select: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'idloginremetente =  '1'  ORDER BY datahoraenvio ASC' at line 1
 08/01/2019 15:30:03> Erro MagicSqlFramework.GenericController.Select: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'idloginremetente =  '1'  ORDER BY datahoraenvio ASC' at line 1
+23/01/2019 11:52:51> Erro MagicSqlFramework.GenericController.Insert: Unknown column 'dataCadastro' in 'field list'
+23/01/2019 15:02:57> Erro MagicSqlFramework.GenericController.Select: Table 'stx.passageiro' doesn't exist
+23/01/2019 15:03:38> Erro MagicSqlFramework.GenericController.Select: Table 'stx.passageiro' doesn't exist
+23/01/2019 15:03:43> Erro MagicSqlFramework.GenericController.Select: Table 'stx.passageiro' doesn't exist
+23/01/2019 15:03:43> Erro MagicSqlFramework.GenericController.Select: Table 'stx.passageiro' doesn't exist
+23/01/2019 15:03:43> Erro MagicSqlFramework.GenericController.Select: Table 'stx.passageiro' doesn't exist

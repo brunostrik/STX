@@ -64,6 +64,7 @@ namespace STX
                         {
                             //Texto da label
                             Label lbl = new Label();
+                            lbl.Name = "lbl" + ((Field)ann).FieldName;
                             lbl.Text = Util.FirstCharToUpper(((Field)ann).DisplayName);
                             lbl.Anchor = AnchorStyles.Right;
                             lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -75,24 +76,28 @@ namespace STX
                                 case SqlTypes.boolean:
                                     ComboBoxSimNao cmb = new ComboBoxSimNao();
                                     cmb.Value = Convert.ToBoolean(prop.GetValue(entity));
+                                    cmb.Name = "cmb" + ((Field)ann).FieldName;
                                     cmb.EntityProperty = prop;
                                     ctl = cmb;
                                     break;
                                 case SqlTypes.datetime:
                                     DateTimeSelectorStx dts = new DateTimeSelectorStx();
                                     dts.Value = (DateTime)prop.GetValue(entity);
+                                    dts.Name = "dts"+ ((Field)ann).FieldName;
                                     dts.EntityProperty = prop;
                                     ctl = dts;
                                     break;
                                 case SqlTypes.integer:
                                     TextBoxNumber tbn = new TextBoxNumber();
                                     tbn.Value = Convert.ToInt32(prop.GetValue(entity));
+                                    tbn.Name = "tbn"+ ((Field)ann).FieldName;
                                     tbn.EntityProperty = prop;
                                     ctl = tbn;
                                     break;
                                 case SqlTypes.longtext:
                                     TextBoxStx tbx = new TextBoxStx();
                                     tbx.Text = prop.GetValue(entity).ToString();
+                                    tbx.Name = "tbx"+ ((Field)ann).FieldName;
                                     tbx.EntityProperty = prop;
                                     tbx.Multiline = true;
                                     tbx.Width = ((Field)ann).ComponentWidth;
@@ -102,17 +107,20 @@ namespace STX
                                 case SqlTypes.money:
                                     TextBoxMoney tbm = new TextBoxMoney();
                                     tbm.Value = Convert.ToDouble(prop.GetValue(entity));
+                                    tbm.Name = "tbm"+ ((Field)ann).FieldName;
                                     tbm.EntityProperty = prop;
                                     ctl = tbm;
                                     break;
                                 case SqlTypes.real:
                                     TextBoxDecimal tbd = new TextBoxDecimal();
                                     tbd.Value = Convert.ToDouble(prop.GetValue(entity));
+                                    tbd.Name = "tbd"+ ((Field)ann).FieldName;
                                     tbd.EntityProperty = prop;
                                     break;
                                 case SqlTypes.varchar:
                                     TextBoxStx txt = new TextBoxStx();
                                     txt.Text = prop.GetValue(entity).ToString();
+                                    txt.Name = "txt"+ ((Field)ann).FieldName;
                                     txt.EntityProperty = prop;
                                     txt.Width = ((Field)ann).ComponentWidth;
                                     ctl = txt;
@@ -120,6 +128,7 @@ namespace STX
                                 case SqlTypes.password:
                                     TextBoxStx pwd = new TextBoxStx();
                                     pwd.Text = prop.GetValue(entity).ToString();
+                                    pwd.Name = "pwd"+ ((Field)ann).FieldName; 
                                     pwd.EntityProperty = prop;
                                     pwd.Width = ((Field)ann).ComponentWidth;
                                     pwd.UseSystemPasswordChar = true;
@@ -147,11 +156,11 @@ namespace STX
             //identificar os controles e pegar os valores
             foreach (Control control in tableLayoutPanel.Controls)
             {
-                string tipoControle = control.Name.Substring(0, 3);
-                if (tipoControle == "lbl") //pula as labels
+                if (control.GetType() == typeof(Label)) //pula as labels
                 {
                     continue;
                 }
+                string tipoControle = control.Name.Substring(0, 3);
                 string nomeControle = control.Name.Substring(3);
                 var props = typeof(T).GetProperties();
                 foreach (var prop in props)

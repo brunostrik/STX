@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.pacotesAéreosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pacotesRodoviáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.financeiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,6 +41,11 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblUser = new System.Windows.Forms.ToolStripStatusLabel();
+            this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.passageirosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rodoviáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aéreosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -50,8 +53,7 @@
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pacotesAéreosToolStripMenuItem,
-            this.pacotesRodoviáriosToolStripMenuItem,
+            this.vendasToolStripMenuItem,
             this.financeiroToolStripMenuItem,
             this.configuraçõesToolStripMenuItem,
             this.relatóriosToolStripMenuItem,
@@ -61,18 +63,6 @@
             this.menuStrip.Size = new System.Drawing.Size(790, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip";
-            // 
-            // pacotesAéreosToolStripMenuItem
-            // 
-            this.pacotesAéreosToolStripMenuItem.Name = "pacotesAéreosToolStripMenuItem";
-            this.pacotesAéreosToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
-            this.pacotesAéreosToolStripMenuItem.Text = "Pacotes Aéreos";
-            // 
-            // pacotesRodoviáriosToolStripMenuItem
-            // 
-            this.pacotesRodoviáriosToolStripMenuItem.Name = "pacotesRodoviáriosToolStripMenuItem";
-            this.pacotesRodoviáriosToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
-            this.pacotesRodoviáriosToolStripMenuItem.Text = "Pacotes Rodoviários";
             // 
             // financeiroToolStripMenuItem
             // 
@@ -156,6 +146,42 @@
             this.lblUser.Size = new System.Drawing.Size(44, 19);
             this.lblUser.Text = "User";
             // 
+            // vendasToolStripMenuItem
+            // 
+            this.vendasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.passageirosToolStripMenuItem,
+            this.clientesToolStripMenuItem,
+            this.rodoviáriosToolStripMenuItem,
+            this.aéreosToolStripMenuItem});
+            this.vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
+            this.vendasToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.vendasToolStripMenuItem.Text = "Vendas";
+            // 
+            // passageirosToolStripMenuItem
+            // 
+            this.passageirosToolStripMenuItem.Name = "passageirosToolStripMenuItem";
+            this.passageirosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.passageirosToolStripMenuItem.Text = "Passageiros";
+            this.passageirosToolStripMenuItem.Click += new System.EventHandler(this.passageirosToolStripMenuItem_Click);
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            // 
+            // rodoviáriosToolStripMenuItem
+            // 
+            this.rodoviáriosToolStripMenuItem.Name = "rodoviáriosToolStripMenuItem";
+            this.rodoviáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rodoviáriosToolStripMenuItem.Text = "Rodoviários";
+            // 
+            // aéreosToolStripMenuItem
+            // 
+            this.aéreosToolStripMenuItem.Name = "aéreosToolStripMenuItem";
+            this.aéreosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aéreosToolStripMenuItem.Text = "Aéreos";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,8 +207,6 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem pacotesAéreosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pacotesRodoviáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem financeiroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configuraçõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
@@ -194,5 +218,10 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         public System.Windows.Forms.ToolStripStatusLabel lblUser;
         public System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripMenuItem vendasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem passageirosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rodoviáriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aéreosToolStripMenuItem;
     }
 }

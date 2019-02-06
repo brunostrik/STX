@@ -48,7 +48,7 @@ namespace STX
 
         private void CarregarGrid(List<T> dataList)
         {
-            if (dataList.Count == 0)
+            if (dataList == null || dataList.Count == 0)
             {
                 return;
             }

@@ -1,5 +1,4 @@
-﻿using STX.Properties;
-using System;
+﻿using System;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
@@ -8,6 +7,11 @@ namespace STX
 {
     public static class Util
     {
+
+        public static string[] uf = { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" };
+        public static string[] tipoPessoa = { "Física", "Jurídica" };
+        public static string[] tipoDocumento = { "RG", "Certidão de Nascimento", "CNH", "Passaporte", "Outros" };//0-Nenhum\\n1-RG\\n2-RN\\n3-CNH\\n4-Passaporte\\n5-Outros
+
         public static string FirstCharToUpper(this string input)
         {
             switch (input)

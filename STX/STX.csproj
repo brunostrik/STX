@@ -76,24 +76,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form\FormLembrete.cs">
+    <Compile Include="Forms\FormCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormLembrete.Designer.cs">
+    <Compile Include="Forms\FormCliente.Designer.cs">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLembrete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLembrete.Designer.cs">
       <DependentUpon>FormLembrete.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FormStxBase.cs">
+    <Compile Include="Forms\FormStxBase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormStxBase.Designer.cs">
+    <Compile Include="Forms\FormStxBase.Designer.cs">
       <DependentUpon>FormStxBase.cs</DependentUpon>
     </Compile>
     <Compile Include="Framework\LembreteControl.cs" />
     <Compile Include="Framework\StxAttributes.cs" />
-    <Compile Include="Form\FormStx.cs">
+    <Compile Include="Forms\FormStx.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormStx.Designer.cs">
+    <Compile Include="Forms\FormStx.Designer.cs">
       <DependentUpon>FormStx.cs</DependentUpon>
     </Compile>
     <Compile Include="List\ListLembrete.cs">
@@ -111,34 +117,34 @@
     <Compile Include="List\ListStx.Designer.cs">
       <DependentUpon>ListStx.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FormFilial.cs">
+    <Compile Include="Forms\FormFilial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormFilial.Designer.cs">
+    <Compile Include="Forms\FormFilial.Designer.cs">
       <DependentUpon>FormFilial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FormLoad.cs">
+    <Compile Include="Forms\FormLoad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormLoad.Designer.cs">
+    <Compile Include="Forms\FormLoad.Designer.cs">
       <DependentUpon>FormLoad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FormLogar.cs">
+    <Compile Include="Forms\FormLogar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormLogar.Designer.cs">
+    <Compile Include="Forms\FormLogar.Designer.cs">
       <DependentUpon>FormLogar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FormMain.cs">
+    <Compile Include="Forms\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormMain.Designer.cs">
+    <Compile Include="Forms\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FormTrocaSenha.cs">
+    <Compile Include="Forms\FormTrocaSenha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormTrocaSenha.Designer.cs">
+    <Compile Include="Forms\FormTrocaSenha.Designer.cs">
       <DependentUpon>FormTrocaSenha.cs</DependentUpon>
     </Compile>
     <Compile Include="List\ListStxBase.cs">
@@ -153,6 +159,7 @@
     <Compile Include="Model\Login.cs" />
     <Compile Include="Model\Logs.cs" />
     <Compile Include="Model\Mail.cs" />
+    <Compile Include="Model\Passageiro.cs" />
     <Compile Include="Model\Vendedor.cs" />
     <Compile Include="Utils\Alerts.cs" />
     <Compile Include="Utils\ComboBoxSimNao.cs">
@@ -191,28 +198,31 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Utils\Utils.cs" />
-    <EmbeddedResource Include="Form\FormFilial.resx">
+    <EmbeddedResource Include="Forms\FormCliente.resx">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFilial.resx">
       <DependentUpon>FormFilial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FormLembrete.resx">
+    <EmbeddedResource Include="Forms\FormLembrete.resx">
       <DependentUpon>FormLembrete.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FormLoad.resx">
+    <EmbeddedResource Include="Forms\FormLoad.resx">
       <DependentUpon>FormLoad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FormLogar.resx">
+    <EmbeddedResource Include="Forms\FormLogar.resx">
       <DependentUpon>FormLogar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FormMain.resx">
+    <EmbeddedResource Include="Forms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FormStx.resx">
+    <EmbeddedResource Include="Forms\FormStx.resx">
       <DependentUpon>FormStx.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FormStxBase.resx">
+    <EmbeddedResource Include="Forms\FormStxBase.resx">
       <DependentUpon>FormStxBase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FormTrocaSenha.resx">
+    <EmbeddedResource Include="Forms\FormTrocaSenha.resx">
       <DependentUpon>FormTrocaSenha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="List\ListLembrete.resx">

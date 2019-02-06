@@ -19,6 +19,13 @@ namespace STX
         public ISelector ReturnClass { get; set; } = null;
         public string SearchProperty { get; set; } = "";
 
+        public ListStxBase()
+        {
+            InitializeComponent();
+            ReturnClass = null;
+            AlternarBotoes();
+        }
+
         public ListStxBase(ISelector returnSelector = null)
         {
             InitializeComponent();

@@ -494,3 +494,21 @@
 08/01/2019 15:31:16> SELECT * FROM lembrete WHERE  enviada =  '1'  AND  idloginremetente =  '1'  ORDER BY datahoraenvio ASC
 08/01/2019 15:31:16> SELECT * FROM lembrete WHERE  enviada =  '1'  AND  idloginremetente =  '1'  ORDER BY datahoraenvio ASC
 08/01/2019 15:31:18> SELECT * FROM lembrete WHERE  enviada =  '0'  AND  idloginremetente =  '1'  ORDER BY datahoraenvio ASC
+23/01/2019 11:38:39> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+23/01/2019 11:38:42> SELECT * FROM passageiro
+23/01/2019 11:39:20> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+23/01/2019 11:39:22> SELECT * FROM passageiro
+23/01/2019 11:44:36> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+23/01/2019 11:44:38> SELECT * FROM passageiro
+23/01/2019 11:47:23> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+23/01/2019 11:47:26> SELECT * FROM passageiro
+23/01/2019 11:52:19> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+23/01/2019 11:52:22> SELECT * FROM passageiro
+23/01/2019 11:52:51> INSERT INTO Passageiro (celular, cpf, telefone, dataCadastro, orgaoEmissor, email, id, documento, dataNascimento, nome, apelido) VALUES ('1234', '07990632900', '', '23/01/2019 11:52:23', '', 'brunostrik@gmail.com', '0', '100314100', '23/01/2019 11:52:23', 'Bruno Strik', 'Brunoo');
+23/01/2019 15:02:56> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+23/01/2019 15:02:57> SELECT * FROM passageiro
+23/01/2019 15:03:36> SELECT * FROM login WHERE  usuario =  'teste'  AND  senha =  '123'  AND  ativo =  '1' 
+23/01/2019 15:03:38> SELECT * FROM passageiro
+23/01/2019 15:03:42> SELECT * FROM passageiro
+23/01/2019 15:03:43> SELECT * FROM passageiro
+23/01/2019 15:03:43> SELECT * FROM passageiro
